@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { getTimeBasedGreeting } from '@/lib/lib/greeting'
 import {
   Menu,
   Bell,
@@ -394,10 +395,10 @@ export default function DashboardPage() {
                     </div>
                   )}
                 </label>
-                <div>
-                  <p className="text-gray-500 text-xs">Good Morning</p>
-                  <h2 className="text-base font-bold text-gray-900">{fullName}</h2>
-                </div>
+  <div>
+  <p className="text-gray-500 text-xs">{getTimeBasedGreeting()}</p>
+  <h2 className="text-base font-bold text-gray-900">{fullName}</h2>
+  </div>
               </div>
               <button className="p-2 bg-[#0000ff] rounded-full text-white hover:opacity-90">
                 <Bell className="w-4 h-4" />
