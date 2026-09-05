@@ -272,7 +272,7 @@ export default function BuyBPCPage() {
                 </div>
                 <div className="flex justify-between items-start gap-2">
                   <div className="flex-1">
-                    <p className="text-xs text-gray-600 mb-0.5">Account Name</p>
+                    <p className="text-xs text-gray-600 mb-0.5">blue pay agaunt </p>
                     <p className="font-bold text-gray-900 text-sm">CHI.. MODE...AGB</p>
                   </div>
                   <button
